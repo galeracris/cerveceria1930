@@ -1,0 +1,69 @@
+
+    .About__Section {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about__Container{
+        padding-top: 47px;
+    }
+        
+        .about__BoxDos {
+            width: 100%;
+            background: rgb(141, 141, 141);
+            border-radius: 10px;
+            padding: 10px 10px;
+            display: flex;
+            align-items: center;
+
+            .about__Text{
+                height: 1150px;
+                font-size: 1.5rem;
+                background-color:rgb(100, 100, 100);
+                padding: 0 15px 0 15px;
+                border-radius: 15px;
+                color: rgb(190, 189, 189);
+
+                .about__Title{
+                    padding-top: 30px;
+                    text-align: center;
+                    box-shadow: 5px 5px black;
+                    border-radius: 10px;
+                }
+
+                p{
+                    padding-top: 20px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+                
+                .about__ListItem{
+                    list-style: none;
+                    
+                    .about__ListItemLi{
+                        text-align: center;
+                    }
+                }
+            }
+            
+            .about__Imagen {
+                flex-shrink: 0;
+                width: 35%;
+                
+                .about__Img {
+                    width: 100%;
+                    padding-bottom: 2px;
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        
+    
+    
+    

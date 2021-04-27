@@ -1,0 +1,205 @@
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
+}
+
+/* ------- MobileFirst ------ */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px 4px;
+}
+
+.column-galeria {
+    flex: 24.4%;
+    max-width: 24.4%;
+    padding: 2px 4px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        margin-top: 4px;
+        vertical-align: middle;
+        width: 100%;
+    }
+}
+
+/* --------- Section logoIndex --------- */
+
+.inicioFondo div img {
+    margin-top: 0%;
+    width: 100%;
+}
+
+
+/* ------- Responsive index -------- */
+
+@media (max-width: 1700px) and (min-width: 1339px) {
+    .column-galeria {
+        max-width: $img-portatil;
+    }
+}
+
+@media (max-width: 1338px) and (min-width: 527px) {
+    .column-galeria {
+        max-width: $img-portatil - 2;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 526px) and (min-width: 408px) {
+    .column-galeria {
+        max-width: $img-portatil - 2;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 407px) and (min-width: 0px) {
+    .column-galeria {
+        max-width: $img-portatil - 5;
+        margin: 0 auto;
+        padding: 1px 1px;
+    }
+}
+
+
+/* --------- Responsive Nosotros --------- */
+
+@media (max-width: 425px) and (min-width: 0px) {
+    .About__Section {
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about__BoxDos {
+        width: 50%;
+        background: rgb(141, 141, 141);
+        border-radius: 10px;
+        padding: 10px 10px;
+        display: inline;
+        align-items: center;
+
+        .about__Text {
+            font-size: 1.5rem;
+            background-color: rgb(100, 100, 100);
+            padding: 10px 10px 10px 10px;
+            border-radius: 10px;
+            color: white;
+
+            .about__ListItem {
+                list-style: none;
+
+                .about__ListItemLi {
+                    text-align: center;
+                }
+            }
+        }
+
+        .about__Imagen {
+            // flex-shrink: 0;
+            width: 100%;
+
+            .about__Img {
+                width: 100%;
+                padding-bottom: 2px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+/* --------- Responsive Productos --------- */
+
+@media (max-width: 325px) and (min-width: 0px) {
+    h3 {
+        #camper {
+            .cardTitle {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+/* --------- Responsive Novedades --------- */
+
+@media (max-width: 425px) and (min-width: 0px) {
+
+    #carouselExampleIndicators {
+        padding-top: 200px;
+    }
+}
+
+/* --------- Menu Hamburguesa --------- */
+
+@media (max-width: 425px) and (min-width: 0px) {
+
+    #navbar {
+        list-style: none;
+        width: 100%;
+        padding: 0.2rem 0.2rem;
+        display: flex;
+        margin-top: 2px;
+        justify-content: space-between;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        border-radius: 30px;
+        border: 1px solid white;
+        filter: drop-shadow(10px 10px 10px black);
+        position: fixed;
+        z-index: 10;
+
+        .container-fluid {
+            a {
+                img {
+                    border-radius: 55px;
+                }
+            }
+        }
+    }
+
+    .nav-item {
+        position: relative;
+        padding-left: 125px;
+
+        &:hover ul {
+            display: block;
+
+        }
+
+        .subMenu {
+            display: none;
+            position: absolute;
+            padding: 0.1 rem 0.1rem;
+            background-color: #313131;
+            border: 1px solid white;
+            border-radius: 15px;
+
+        }
+    }
+
+    .nav-item2 {
+
+        a {
+            white-space: nowrap;
+            list-style: none;
+            padding-left: 125px;
+            &:hover {
+                background-color: #757575;
+                border-radius: 20px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,73 @@
+#sectionProductos {
+    padding-top:80px;
+    scroll-margin-top: auto;
+}
+
+    .container{
+        .titleProductos {
+            display: block;
+            border-radius: 20px;
+            text-align: center;
+            padding: 2px 2px;
+            color: white;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+    }
+
+@keyframes example {
+    0% {
+        left: 200px;
+        background-color: white;
+        color: black;
+    }
+
+    50% {
+        right: 200px;
+        background-color: #000000;
+        color: white;
+    }
+    100% {
+        left: 200px;
+        background-color: white;
+        color: black;
+    }
+}
+
+.containerBeer{
+    padding-left: 22.5%;
+    align-items: center;
+    
+    .cardBorder{
+        border: solid 10px white;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all ease-out 0.2s;
+        img{
+            width: 100%;
+            height: auto;
+            scroll-margin-top: 20px;
+            align-self: center;  
+        &:hover{
+            transform: scale(1.10);
+            box-shadow: 2px 2px black;
+        }
+    }
+    }
+    .cardBody {
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+    .cardTitle{
+        scroll-margin-top: 100px;
+        text-align: center;
+        text-decoration: underline;
+        text-shadow: 1px 1px black;
+    }
+    .cardText{  
+        align-self: center;
+    }
+}

@@ -1,0 +1,377 @@
+* {
+  padding: 0px;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+main {
+  background: black;
+  background: linear-gradient(0deg, black 0%, white 50%, black 100%); }
+
+/* ------- MobileFirst ------ */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px 4px; }
+
+.column-galeria {
+  flex: 24.4%;
+  max-width: 24.4%;
+  padding: 2px 4px;
+  align-items: center;
+  justify-content: center; }
+  .column-galeria img {
+    margin-top: 4px;
+    vertical-align: middle;
+    width: 100%; }
+
+/* --------- Section logoIndex --------- */
+.inicioFondo div img {
+  margin-top: 0%;
+  width: 100%; }
+
+/* ------- Responsive index -------- */
+@media (max-width: 1700px) and (min-width: 1339px) {
+  .column-galeria {
+    max-width: 25%; } }
+
+@media (max-width: 1338px) and (min-width: 527px) {
+  .column-galeria {
+    max-width: 23%;
+    margin: 0 auto; } }
+
+@media (max-width: 526px) and (min-width: 408px) {
+  .column-galeria {
+    max-width: 23%;
+    margin: 0 auto; } }
+
+@media (max-width: 407px) and (min-width: 0px) {
+  .column-galeria {
+    max-width: 20%;
+    margin: 0 auto;
+    padding: 1px 1px; } }
+
+/* --------- Responsive Nosotros --------- */
+@media (max-width: 425px) and (min-width: 0px) {
+  .About__Section {
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center; }
+  .about__BoxDos {
+    width: 50%;
+    background: #8d8d8d;
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: inline;
+    align-items: center; }
+    .about__BoxDos .about__Text {
+      font-size: 1.5rem;
+      background-color: #646464;
+      padding: 10px 10px 10px 10px;
+      border-radius: 10px;
+      color: white; }
+      .about__BoxDos .about__Text .about__ListItem {
+        list-style: none; }
+        .about__BoxDos .about__Text .about__ListItem .about__ListItemLi {
+          text-align: center; }
+    .about__BoxDos .about__Imagen {
+      width: 100%; }
+      .about__BoxDos .about__Imagen .about__Img {
+        width: 100%;
+        padding-bottom: 2px;
+        padding-right: 5px; } }
+
+/* --------- Responsive Productos --------- */
+@media (max-width: 325px) and (min-width: 0px) {
+  h3 #camper .cardTitle {
+    padding-top: 20px; } }
+
+/* --------- Responsive Novedades --------- */
+@media (max-width: 425px) and (min-width: 0px) {
+  #carouselExampleIndicators {
+    padding-top: 200px; } }
+
+/* --------- Menu Hamburguesa --------- */
+@media (max-width: 425px) and (min-width: 0px) {
+  #navbar {
+    list-style: none;
+    width: 100%;
+    padding: 0.2rem 0.2rem;
+    display: flex;
+    margin-top: 2px;
+    justify-content: space-between;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-radius: 30px;
+    border: 1px solid white;
+    filter: drop-shadow(10px 10px 10px black);
+    position: fixed;
+    z-index: 10; }
+    #navbar .container-fluid a img {
+      border-radius: 55px; }
+  .nav-item {
+    position: relative;
+    padding-left: 125px; }
+    .nav-item:hover ul {
+      display: block; }
+    .nav-item .subMenu {
+      display: none;
+      position: absolute;
+      padding: 0.1 rem 0.1rem;
+      background-color: #313131;
+      border: 1px solid white;
+      border-radius: 15px; }
+  .nav-item2 a {
+    white-space: nowrap;
+    list-style: none;
+    padding-left: 125px; }
+    .nav-item2 a:hover {
+      background-color: #757575;
+      border-radius: 20px; } }
+
+#navbar {
+  list-style: none;
+  width: 100%;
+  padding: 0.2rem 0.2rem;
+  display: flex;
+  margin-top: 2px;
+  justify-content: space-evenly;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 30px;
+  border: 1px solid white;
+  filter: drop-shadow(10px 10px 10px black);
+  position: fixed;
+  z-index: 10; }
+  #navbar .container-fluid a img {
+    border-radius: 55px; }
+
+.nav-item {
+  position: relative; }
+  .nav-item:hover ul {
+    background-color: #757575;
+    display: block; }
+  .nav-item .subMenu {
+    display: none;
+    position: absolute;
+    padding: 0.1 rem 0.1rem;
+    background-color: #313131;
+    border: 1px solid white;
+    border-radius: 15px; }
+
+.nav-item2 a {
+  white-space: nowrap;
+  list-style: none; }
+  .nav-item2 a:hover {
+    background-color: #757575;
+    border-radius: 20px; }
+
+.footerCopiRedes {
+  width: 100%;
+  background: black;
+  display: flex; }
+  .footerCopiRedes .mainRedes {
+    width: 98%;
+    padding: 15px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    align-items: center; }
+    .footerCopiRedes .mainRedes .footerLogoContainer .footerLogo {
+      width: 55px;
+      border-radius: 35px; }
+    .footerCopiRedes .mainRedes .footerCopi {
+      width: 70%;
+      color: white; }
+    .footerCopiRedes .mainRedes .footerRedes {
+      width: 40%;
+      display: flex;
+      justify-content: space-around; }
+      .footerCopiRedes .mainRedes .footerRedes .logoFace {
+        width: 100%;
+        height: 100%; }
+      .footerCopiRedes .mainRedes .footerRedes .logoInsta {
+        width: 110%;
+        height: 110%; }
+      .footerCopiRedes .mainRedes .footerRedes .logoYou {
+        width: 90%;
+        height: 90%; }
+      .footerCopiRedes .mainRedes .footerRedes a {
+        text-decoration: none;
+        width: 40px;
+        height: 40px;
+        line-height: 30px;
+        border-radius: 50%;
+        background-color: white; }
+
+.About__Section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.about__Container {
+  padding-top: 47px; }
+
+.about__BoxDos {
+  width: 100%;
+  background: #8d8d8d;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center; }
+  .about__BoxDos .about__Text {
+    height: 1150px;
+    font-size: 1.5rem;
+    background-color: #646464;
+    padding: 0 15px 0 15px;
+    border-radius: 15px;
+    color: #bebdbd; }
+    .about__BoxDos .about__Text .about__Title {
+      padding-top: 30px;
+      text-align: center;
+      box-shadow: 5px 5px black;
+      border-radius: 10px; }
+    .about__BoxDos .about__Text p {
+      padding-top: 20px; }
+    .about__BoxDos .about__Text a {
+      text-decoration: none;
+      color: black; }
+    .about__BoxDos .about__Text .about__ListItem {
+      list-style: none; }
+      .about__BoxDos .about__Text .about__ListItem .about__ListItemLi {
+        text-align: center; }
+  .about__BoxDos .about__Imagen {
+    flex-shrink: 0;
+    width: 35%; }
+    .about__BoxDos .about__Imagen .about__Img {
+      width: 100%;
+      padding-bottom: 2px;
+      padding-right: 5px; }
+
+.containerHorario {
+  text-align: center;
+  background-color: darkgray;
+  padding: 2rem; }
+  .containerHorario .row #boxText {
+    border: solid 2px white;
+    border-radius: 20px; }
+    .containerHorario .row #boxText:hover {
+      transform: scale(1.05);
+      background-color: #5c5a5a;
+      box-shadow: 2px 2px black;
+      color: white; }
+  .containerHorario .row #logoNovedad {
+    margin-top: 10px; }
+    .containerHorario .row #logoNovedad:hover {
+      transform: scale(1.1);
+      box-shadow: 2px 2px black; }
+
+#sectionProductos {
+  padding-top: 80px;
+  scroll-margin-top: auto; }
+
+.container .titleProductos {
+  display: block;
+  border-radius: 20px;
+  text-align: center;
+  padding: 2px 2px;
+  color: white;
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite; }
+
+@keyframes example {
+  0% {
+    left: 200px;
+    background-color: white;
+    color: black; }
+  50% {
+    right: 200px;
+    background-color: #000000;
+    color: white; }
+  100% {
+    left: 200px;
+    background-color: white;
+    color: black; } }
+
+.containerBeer {
+  padding-left: 22.5%;
+  align-items: center; }
+  .containerBeer .cardBorder {
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s; }
+    .containerBeer .cardBorder img {
+      width: 100%;
+      height: auto;
+      scroll-margin-top: 20px;
+      align-self: center; }
+      .containerBeer .cardBorder img:hover {
+        transform: scale(1.1);
+        box-shadow: 2px 2px black; }
+  .containerBeer .cardBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px; }
+  .containerBeer .cardTitle {
+    scroll-margin-top: 100px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px black; }
+  .containerBeer .cardText {
+    align-self: center; }
+
+#mainContact {
+  padding-top: 85px;
+  padding-bottom: 140px; }
+  #mainContact .titleContact {
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 2px;
+    background-color: #8d8d8d;
+    color: white; }
+  #mainContact .subTitleContact {
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 2px;
+    background-color: #8d8d8d;
+    color: white; }
+
+h2 {
+  padding-bottom: 25px; }
+
+.logoContainerContacto {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .logoContainerContacto .logoContacto {
+    border-radius: 65px;
+    width: 20%;
+    padding-top: 25px; }
+
+.container #boxText {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px; }
+
+.container #boxText2 {
+  background-color: #8d8d8d;
+  border-radius: 10px; }
+
+.containerForm {
+  padding: 5px; }
+  .containerForm h6 {
+    padding-top: 5px; }
+  .containerForm .form-text {
+    color: #e6e6e6; }

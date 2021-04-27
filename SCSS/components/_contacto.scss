@@ -1,0 +1,65 @@
+@mixin tituloContacto {
+    display: block;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px 2px;
+    background-color: rgb(141, 141, 141);
+    color: white;
+}
+
+#mainContact {
+    padding-top: 85px;
+    padding-bottom: 140px;
+
+    .titleContact {
+        @include tituloContacto();
+    }
+
+    .subTitleContact {
+        @include tituloContacto();
+    }
+}
+
+h2{
+    padding-bottom: 25px;
+}
+
+.logoContainerContacto{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+
+    .logoContacto{
+        border-radius: 65px;
+        width: 20%;
+        padding-top: 25px;
+    }
+}
+
+.container {
+
+    #boxText {
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #boxText2 {
+        background-color: rgb(141, 141, 141);
+        border-radius: 10px;
+    }
+}
+
+.containerForm {
+    padding: 5px;
+
+    h6 {
+        padding-top: 5px;
+    }
+
+    .form-text {
+        color: rgb(230, 230, 230);
+    }
+}
