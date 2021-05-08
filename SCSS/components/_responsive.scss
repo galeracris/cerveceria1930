@@ -102,13 +102,17 @@ main {
 
 /* --------- Responsive Productos --------- */
 
-@media (max-width: 325px) and (min-width: 0px) {
+@media (max-width: 768px) and (min-width: 0px) {
     h3 {
         #camper {
             .cardTitle {
-                padding-top: 20px;
+                padding-top: 10px;
             }
         }
+    }
+    .containerBeer{
+        padding: 2.5%;
+        align-items: center;
     }
 }
 
