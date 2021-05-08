@@ -53,13 +53,29 @@ h2{
 }
 
 .containerForm {
-    padding: 5px;
+    // padding: 5px;
+
+    .formClass{
+        outline: none;
+    }
+
+    .form-label{
+        color: white;
+    }
 
     h6 {
         padding-top: 5px;
     }
 
-    .form-text {
-        color: rgb(230, 230, 230);
+    .form-control{
+        outline: none;
+
+    &:focus{
+        border-color:rgb(141, 141, 141);
     }
+    }
+    .form-text {
+        color: black;
+    }
+    
 }
