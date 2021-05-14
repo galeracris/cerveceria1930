@@ -166,7 +166,7 @@ main {
 
     #navbar {
 
-            background-color: transparent !important;
+            background-color: rgba(0, 0, 0, .6) !important;
             list-style: none;
             border: transparent !important;
 
@@ -191,8 +191,9 @@ main {
         .subMenu {
             display: none;
             position: absolute;
+            right: 25%;
             padding: 0.1 rem 0.1rem;
-            background-color: none;
+            background-color: rgba(0, 0, 0, .6) !important;
             border: none;
             border-radius: 15px;
 

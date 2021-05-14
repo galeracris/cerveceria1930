@@ -175,7 +175,7 @@ main {
 /* --------- Menu Hamburguesa --------- */
 @media (max-width: 768px) and (min-width: 0px) {
   #navbar {
-    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
     list-style: none;
     border: transparent !important;
   }
@@ -192,8 +192,9 @@ main {
   .nav-item .subMenu {
     display: none;
     position: absolute;
+    right: 25%;
     padding: 0.1 rem 0.1rem;
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0.6) !important;
     border: none;
     border-radius: 15px;
   }
