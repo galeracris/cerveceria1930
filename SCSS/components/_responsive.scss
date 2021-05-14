@@ -9,6 +9,21 @@ main {
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
+@mixin boxTextR{
+    border: solid 2px white;
+    border-radius: 20px;
+    padding: 15px;
+   
+    &:hover{
+        transform: scale(1.05);
+        background-color: rgb(92, 90, 90);
+        box-shadow: 2px 2px black;
+        color: white;
+    } 
+}
+
+
+
 /* ------- MobileFirst ------ */
 
 .row {
@@ -63,14 +78,17 @@ main {
 
 @media (max-width: 407px) and (min-width: 0px) {
     .column-galeria {
-        max-width: $img-portatil - 5;
+        max-width: 100%;
         margin: 0 auto;
-        padding: 1px 1px;
+        // padding: 1px 1px;
     }
+   .navbar{
+       background-color: black;
+   }
 }
 
-
 /* --------- Responsive Nosotros --------- */
+
 @media (max-width: 768px) and (min-width: 0px) {
 
     .about__BoxDos {
@@ -118,11 +136,28 @@ main {
 
 /* --------- Responsive Novedades --------- */
 
-@media screen and (max-width: 425px) and (min-width: 0px) {
+@media (max-width: 768px) and (min-width: 0px) {
 
-    #carouselExampleIndicators {
-        padding-top: 200px;
+.row{        
+    #boxText1, #boxText2, #boxText3{
+        @include boxTextR();
+        margin-bottom: 10px;
     }
+}
+}
+
+@media (max-width: 425px) and (min-width: 0px) {
+    
+    #carouselExampleIndicators {
+        padding-top: 85px;
+    }
+
+    .row{        
+        #boxText1, #boxText2, #boxText3{
+            @include boxTextR();
+            margin-bottom: 5px;
+    }
+}
 }
 
 /* --------- Menu Hamburguesa --------- */
@@ -176,4 +211,6 @@ main {
             }
         }
     }
+
+
 }

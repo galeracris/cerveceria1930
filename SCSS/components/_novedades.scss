@@ -33,5 +33,44 @@
     }    
 }
 
+// // codigo nuevo
 
+// @mixin boxText{
+//     border: solid 2px white;
+//     border-radius: 20px;
+//     padding: 15px;
+   
+//     &:hover{
+//         transform: scale(1.05);
+//         background-color: rgb(92, 90, 90);
+//         box-shadow: 2px 2px black;
+//         color: white;
+//     } 
+// }
+// .row{
+//     display: flex;
+//     flex-wrap: wrap;
+    
+//     .boxContainer{
+//         padding: 0 15px;
+//     }
+    
 
+//     #boxText1{
+//         @include boxText();
+//         margin: 2.5% 2.5% 0 2.5%;
+//         width:30%;
+
+//     }
+    
+//     #boxText2{
+//         @include boxText();
+//         margin: 2.5% 0 0 0;
+//         width:30%;
+//     }
+
+//     #boxText3{
+//         @include boxText();
+//         margin: 2.5% 2.5% 0 2.5%;
+//         width: 30%;
+//     }
