@@ -11,72 +11,14 @@ main {
 }
 
 /* ------- MobileFirst ------ */
-.row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 4px 4px;
-}
-
-.column-galeria {
-  -webkit-box-flex: 24.4%;
-      -ms-flex: 24.4%;
-          flex: 24.4%;
-  max-width: 24.4%;
-  padding: 2px 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.column-galeria img {
-  margin-top: 4px;
-  vertical-align: middle;
-  width: 100%;
-}
-
 /* --------- Section logoIndex --------- */
 .inicioFondo div img {
-  margin-top: 0%;
+  margin-top: 65px;
   width: 100%;
+  min-height: 100%;
 }
 
 /* ------- Responsive index -------- */
-@media (max-width: 1700px) and (min-width: 1339px) {
-  .column-galeria {
-    max-width: 50%;
-  }
-}
-
-@media (max-width: 1338px) and (min-width: 527px) {
-  .column-galeria {
-    max-width: 48%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 526px) and (min-width: 408px) {
-  .column-galeria {
-    max-width: 48%;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 407px) and (min-width: 0px) {
-  .column-galeria {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  .navbar {
-    background-color: black;
-  }
-}
-
 /* --------- Responsive Nosotros --------- */
 @media (max-width: 768px) and (min-width: 0px) {
   .about__BoxDos {
@@ -184,7 +126,6 @@ main {
   }
   .nav-item {
     position: relative;
-    padding-left: 125px;
   }
   .nav-item:hover ul {
     display: block;
@@ -192,16 +133,14 @@ main {
   .nav-item .subMenu {
     display: none;
     position: absolute;
-    right: 25%;
-    padding: 0.1 rem 0.1rem;
+    list-style: none;
+    padding-left: 150px;
     background-color: rgba(0, 0, 0, 0.6) !important;
     border: none;
     border-radius: 15px;
   }
   .nav-item2 a {
     white-space: nowrap;
-    list-style: none;
-    padding-left: 125px;
   }
   .nav-item2 a:hover {
     background-color: #757575;
@@ -590,6 +529,7 @@ main {
 }
 
 .containerBeer .cardText {
+  text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
